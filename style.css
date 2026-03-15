@@ -511,3 +511,94 @@ body {
         right: -15px;
     }
 }
+/* ========================================
+   ESTILOS MEJORADOS PARA REFERENCIAS
+   ======================================== */
+.ref-card {
+    background: rgba(19, 47, 76, 0.7);
+    backdrop-filter: blur(5px);
+    border: 4px solid var(--rosa-lila);
+    border-radius: 30px;
+    padding: 2rem;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.ref-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 0 rgba(0,0,0,0.3);
+    border-color: var(--morado-vibrante);
+}
+
+.ref-titulo {
+    font-family: 'Bangers', cursive;
+    font-size: 1.8rem;
+    color: var(--rosa-lila);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 3px solid var(--morado-vibrante);
+    padding-bottom: 0.8rem;
+}
+
+.ref-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ref-lista li {
+    padding: 0.8rem 0;
+    border-bottom: 1px dashed rgba(194, 149, 194, 0.3);
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.1rem;
+    color: var(--texto-principal);
+    line-height: 1.5;
+}
+
+.ref-lista li:last-child {
+    border-bottom: none;
+}
+
+.ref-lista li em {
+    color: var(--rosa-lila);
+    font-style: italic;
+}
+
+.ref-lista li strong {
+    color: var(--morado-vibrante);
+    font-weight: bold;
+}
+
+.fuentes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.fuentes-grid p {
+    background: rgba(10, 25, 41, 0.5);
+    padding: 1rem;
+    border-radius: 20px;
+    border-left: 4px solid var(--rosa-lila);
+    font-size: 1rem;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Enlaces dentro de referencias */
+.ref-lista li a, .fuentes-grid p a {
+    color: var(--rosa-lila);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--morado-vibrante);
+    transition: all 0.3s;
+}
+
+.ref-lista li a:hover, .fuentes-grid p a:hover {
+    color: var(--morado-vibrante);
+    border-bottom: 2px solid var(--rosa-lila);
+}
