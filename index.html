@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Digital · Mis Contenidos</title>
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FONDO CON PARTÍCULAS -->
+    <div id="particles-js"></div>
+
+    <main class="container">
+
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <h1 class="titulo-principal">🎮 Portfolio Digital</h1>
+            <p class="subtitulo">Desarrollo de Contenidos Digitales y Multimedia</p>
+            <div class="badge-estudiante">
+                <span class="pulse-dot"></span>
+                <p class="nombre-estudiante">Estudiantes: Laura Herrera, Gustavo Duarte </p>
+            </div>
+        </header>
+
+        <!-- ===== TABS ===== -->
+        <div class="tabs-container">
+            
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="week1">
+                    <i class="fa-regular fa-calendar"></i> SEMANA 1
+                </button>
+                <button class="tab-button" data-tab="week2">
+                    <i class="fa-regular fa-calendar"></i> SEMANA 2
+                </button>
+                <button class="tab-button" data-tab="references">
+                    <i class="fa-regular fa-bookmark"></i> REFERENCIAS
+                </button>
+            </div>
+
+            <div class="tab-content">
+
+                <!-- ===== SEMANA 1 ===== -->
+                <div class="tab-pane active" id="week1">
+                    <h2 class="titulo-seccion">
+                        <i class="fa-regular fa-compass"></i> 
+                        Semana 1: Fundamentos y Reflexión
+                    </h2>
+
+                    <!-- REFLEXIÓN -->
+                    <div class="reflection-card">
+                        <i class=></i>
+                        <div class="reflection-content">
+                            <h3 class="subtitulo-seccion">Nuestra Reflexión</h3>
+                            <p class="texto-normal">El diseño de contenidos digitales no es solo cuestión de estética, sino de aplicar fundamentos como los principios de Mayer, entender las tendencias interactivas actuales y reconocer el papel tanto del programador como del usuario en la experiencia digital. el diseño de contenidos digitales no es solo cuestión de estética, sino de aplicar fundamentos ,
+                                entender las tendencias interactivas actuales y reconocer el papel tanto del programador como del usuario en la experiencia digital.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subtitulo-seccion">
+                        <i class="fa-regular fa-star"></i> 
+                        Mis Creaciones - Semana 1
+                    </h3>
+                    
+                    <div class="grid-container">
+                        
+                        <!-- TARJETA 1: VIDEO - Fundamentos -->
+                        <div class="card" onclick="abrirPreview('video-local', 'videos/fundamentos.mp4')">
+                            <div class="card-media">
+                                <video src="videos/fundamentos.mp4" preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
+                                <div class="play-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Fundamentos del Diseño</h3>
+                                <p class="card-texto">Video explicativo sobre los fundamentos del diseño digital.</p>
+                                <span class="card-etiqueta"><i class="fa-solid fa-video"></i> Video Local</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 2: GENIALLY - Principios de Mayer -->
+                        <div class="card" onclick="abrirPreview('genially', 'https://view.genially.com/69b6c803a7ff1a0c2ff16b26/interactive-content-principios-del-diseno-multimedia')">
+                            <div class="card-media">
+                                <img src="imagenes/mayer.png" alt="Principios de Mayer" onerror="this.src='https://view.genially.com/69b6c803a7ff1a0c2ff16b26/interactive-content-principios-del-diseno-multimedia'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-file-powerpoint"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Principios de Mayer</h3>
+                                <p class="card-texto">infografia interactiva sobre la teoría cognitiva multimedia.</p>
+                                <span class="card-etiqueta"><i class="fa-regular fa-file-powerpoint"></i> Genially</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 3: GENIALLY - Tendencias Globales -->
+                        <div class="card" onclick="abrirPreview('genially', 'https://view.genially.com/69b6bd2facd9a486291eb413/presentation-tendencias-en-diseno-interactivo')">
+                            <div class="card-media">
+                                <img src="imagenes/diseño_interactivo.png" alt="Tendencias Globales" onerror="this.src='https://view.genially.com/69b6bd2facd9a486291eb413/presentation-tendencias-en-diseno-interactivo'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-file-powerpoint"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Tendencias Globales</h3>
+                                <p class="card-texto">Quiz de tendencias en diseño interactivo.</p>
+                                <span class="card-etiqueta"><i class="fa-regular fa-file-powerpoint"></i> Genially</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 4: CANVA - Rol del programador -->
+                        <div class="card" onclick="abrirPreview('imagen', 'imagenes/canva1.jpg')">
+                            <div class="card-media">
+                                <img src="imagenes/canva1.jpg" alt="Rol del programador" onerror="this.src='https://via.placeholder.com/400x200/C295C2/FFFFFF?text=Rol+Programador'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Rol del Programador y Usuario</h3>
+                                <p class="card-texto">Infografía sobre roles en el ecosistema digital.</p>
+                                <span class="card-etiqueta"><i class="fa-brands fa-canva"></i> Canva</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 5: CANVA - Licenciamiento -->
+                        <div class="card" onclick="abrirPreview('imagen', 'imagenes/canva2.jpg')">
+                            <div class="card-media">
+                                <img src="imagenes/canva2.jpg" alt="Licenciamiento" onerror="this.src='https://via.placeholder.com/400x200/9860A4/FFFFFF?text=Licenciamiento'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Licenciamiento de Contenidos</h3>
+                                <p class="card-texto">Tipos de licencias y Creative Commons.</p>
+                                <span class="card-etiqueta"><i class="fa-brands fa-canva"></i> Canva</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 6: CANVA - Importancia en Educación -->
+                        <div class="card" onclick="abrirPreview('imagen', 'imagenes/canva3.jpg')">
+                            <div class="card-media">
+                                <img src="imagenes/canva3.jpg" alt="Importancia en Educación" onerror="this.src='https://via.placeholder.com/400x200/7B749E/FFFFFF?text=Educación'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Importancia en Educación</h3>
+                                <p class="card-texto">Aprendizaje ubicuo y REA.</p>
+                                <span class="card-etiqueta"><i class="fa-brands fa-canva"></i> Canva</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 7: VIDEO - Buenas Prácticas -->
+                        <div class="card" onclick="abrirPreview('video-local', 'videos/buenas_practicas.mp4')">
+                            <div class="card-media">
+                                <video src="videos/buenas_practicas.mp4" preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
+                                <div class="play-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Buenas Prácticas</h3>
+                                <p class="card-texto">Ejemplos de buenas prácticas en diseño digital.</p>
+                                <span class="card-etiqueta"><i class="fa-solid fa-video"></i> Video Local</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== SEMANA 2 ===== -->
+                <div class="tab-pane" id="week2">
+                    <h2 class="titulo-seccion">
+                        <i class="fa-solid fa-robot"></i>> 
+                        Semana 2: Creación de Contenido
+                    </h2>
+
+                    <div class="grid-container">
+                        
+                        <!-- TARJETA 1: GENIALLY - Desarrollo de Contenidos Digitales -->
+                        <div class="card" onclick="abrirPreview('genially', 'https://view.genially.com/69a0fd9e24f962cc6dcd046e/presentation-desarrollo-de')">
+                            <div class="card-media">
+                                <img src="imagenes/Desarrollo.png" alt="Desarrollo de Contenidos" onerror="this.src='https://view.genially.com/69a0fd9e24f962cc6dcd046e/presentation-desarrollo-de'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-file-powerpoint"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Desarrollo de Contenidos</h3>
+                                <p class="card-texto">Presentación sobre desarrollo de contenidos digitales.</p>
+                                <span class="card-etiqueta"><i class="fa-regular fa-file-powerpoint"></i> Genially</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 2: IMAGEN - Matriz de Planeación -->
+                        <div class="card" onclick="abrirPreview('imagen', 'imagenes/matriz.jpg')">
+                            <div class="card-media">
+                                <img src="imagenes/matriz.jpg" alt="Matriz de Planeación" onerror="this.src='imagenes/Matriz.png'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-image"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Matriz de Planeación</h3>
+                                <p class="card-texto">Diseño de matriz para organizar contenidos.</p>
+                                <span class="card-etiqueta"><i class="fa-regular fa-image"></i> Imagen</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 3: GENIALLY - Infografía Interactiva -->
+                        <div class="card" onclick="abrirPreview('genially', 'https://view.genially.com/6999367127606314b4a28650/interactive-content-pausas-activas')">
+                            <div class="card-media">
+                                <img src="imagenes/infografia.png" alt="Infografía Interactiva" onerror="this.src='https://view.genially.com/6999367127606314b4a28650/interactive-content-pausas-activas'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-file-powerpoint"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Infografía Interactiva</h3>
+                                <p class="card-texto">Recurso visual dinámico sobre contenidos digitales.</p>
+                                <span class="card-etiqueta"><i class="fa-regular fa-file-powerpoint"></i> Genially</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 4: VIDEO - Educativo Corto  -->
+                        <div class="card" onclick="abrirPreview('video-local', 'videos/educativo.mp4')">
+                            <div class="card-media">
+                                <video src="videos/educativo.mp4" preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
+                                <div class="play-overlay">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">Video Educativo Corto</h3>
+                                <p class="card-texto">Video sobre conceptos clave de contenidos digitales.</p>
+                                <span class="card-etiqueta"><i class="fa-solid fa-video"></i> Video Local</span>
+                            </div>
+                        </div>
+
+                        <!-- TARJETA 5: GENIALLY - IA Generativa Sostenibilidad -->
+                        <div class="card" onclick="abrirPreview('genially', 'https://view.genially.com/69a37fefa8dd2f113b081792/presentation-sostenible')">
+                            <div class="card-media">
+                                <img src="imagenes/inteligencia_artificial.png" alt="IA Generativa" onerror="this.src='https://view.genially.com/69a37fefa8dd2f113b081792/presentation-sostenible'">
+                                <div class="play-overlay">
+                                    <i class="fa-regular fa-file-powerpoint"></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-titulo">IA Generativa Sostenibilidad</h3>
+                                <p class="card-texto">Presentación sobre inteligencia artificial y sostenibilidad.</p>
+                                <span class="card-etiqueta"><i class="fa-regular fa-file-powerpoint"></i> Genially</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== REFERENCIAS ===== -->
+                <div class="tab-pane" id="references">
+                    <h2 class="titulo-seccion">
+                        <i class=></i> 
+                        Referencias y Uso de IA
+                    </h2>
+
+                    <div class="references-grid">
+                        <div class="ref-card">
+                            <h3 class="ref-titulo">
+                                <i class="fa-solid fa-tools"></i> Herramientas
+                            </h3>
+                            <ul class="ref-lista">
+                                <li><i class="fa-brands fa-canva"></i> Canva - Infografías</li>
+                                <li><i class="fa-regular fa-file-powerpoint"></i> Genially - Presentaciones</li>
+                                <li><i class="fa-solid fa-code"></i> VS Code - Desarrollo web</li>
+                            </ul>
+                        </div>
+
+                        <div class="ref-card">
+                            <h3 class="ref-titulo">
+                                <i class="fa-solid fa-robot"></i> Uso de IA
+                            </h3>
+                            <ul class="ref-lista">
+                                <li><i class="fa-regular fa-circle-check"></i> ChatGPT - Apoyo en contenidos</li>
+                                <li><i class="fa-regular fa-circle-check"></i> Deepseek - ayuda en codificacion</li>
+                                <li><i class="fa-regular fa-circle-check"></i> Pictory AI - Desarrollo de videos</li>
+                                <li><i class="fa-regular fa-circle-check"></i> Genially - desarrollo del quiz </li>
+                            </ul>
+                        </div>
+
+                        <div class="ref-card full-width">
+                            <h3 class="ref-titulo">
+                                <i class=></i> Fuentes
+                            </h3>
+                            <p class="texto-normal">📚 Mayer, R. E. (2005). The Cambridge Handbook of Multimedia Learning.</p>
+                            <p class="texto-normal">📚 Creative Commons. "About CC Licenses".</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <p class="footer-texto">
+                <i class="fa-regular fa-heart"></i> 
+                Portfolio Digital  
+                <i class="fa-regular fa-heart"></i>
+            </p>
+            <p class="footer-nombre">Laura Herrera, Gustavo Duarte · 2026</p>
+        </footer>
+    </main>
+
+    <!-- ===== MODAL PARA PREVIEWS ===== -->
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <span class="close-modal">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-body" id="modalBody">
+                <!-- Aquí se carga el preview -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
