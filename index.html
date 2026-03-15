@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Digital · Mis Contenidos</title>
     
-    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fredoka+One&family=Patrick+Hand&display=swap" rel="stylesheet">
     
-    <!-- FONT AWESOME -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
-    <!-- CSS PRINCIPAL -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- FONDO CON PARTÍCULAS -->
     <div id="particles-js"></div>
 
     <main class="container">
 
-        <!-- ===== HEADER ===== -->
+      
         <header class="header">
             <h1 class="titulo-principal">🎮 Portfolio Digital</h1>
             <p class="subtitulo">Desarrollo de Contenidos Digitales y Multimedia</p>
@@ -31,7 +28,7 @@
             </div>
         </header>
 
-        <!-- ===== TABS ===== -->
+        
         <div class="tabs-container">
             
             <div class="tab-buttons">
@@ -48,14 +45,13 @@
 
             <div class="tab-content">
 
-                <!-- ===== SEMANA 1 ===== -->
                 <div class="tab-pane active" id="week1">
                     <h2 class="titulo-seccion">
                         <i class="fa-regular fa-compass"></i> 
                         Semana 1: Fundamentos y Reflexión
                     </h2>
 
-                    <!-- REFLEXIÓN -->
+                    
                     <div class="reflection-card">
                         <i class=></i>
                         <div class="reflection-content">
@@ -72,20 +68,20 @@
                     
                     <div class="grid-container">
                         
-                        <!-- TARJETA 1: VIDEO - Fundamentos -->
-                        <div class="card" onclick="abrirPreview('video-local', 'videos/fundamentos.mp4')">
-                            <div class="card-media">
-                                <video src="videos/fundamentos.mp4" preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
-                                <div class="play-overlay">
-                                    <i class="fa-solid fa-play"></i>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-titulo">Fundamentos del Diseño</h3>
-                                <p class="card-texto">Video explicativo sobre los fundamentos del diseño digital.</p>
-                                <span class="card-etiqueta"><i class="fa-solid fa-video"></i> Video Local</span>
-                            </div>
-                        </div>
+                       <!-- TARJETA 1: VIDEO - Fundamentos (YouTube) -->
+<div class="card" onclick="window.open('https://youtu.be/wIUTyAu6hDI', '_blank')">
+    <div class="card-media">
+        <img src="https://img.youtube.com/vi/wIUTyAu6hDI/maxresdefault.jpg" alt="Video Fundamentos" onerror="this.src='https://img.youtube.com/vi/wIUTyAu6hDI/hqdefault.jpg'">
+        <div class="play-overlay">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
+    <div class="card-body">
+        <h3 class="card-titulo">Fundamentos del Diseño</h3>
+        <p class="card-texto">Video explicativo sobre los fundamentos del diseño digital.</p>
+        <span class="card-etiqueta"><i class="fa-brands fa-youtube"></i> YouTube</span>
+    </div>
+</div>
 
                         <!-- TARJETA 2: GENIALLY - Principios de Mayer -->
                         <div class="card" onclick="abrirPreview('genially', 'https://view.genially.com/69b6c803a7ff1a0c2ff16b26/interactive-content-principios-del-diseno-multimedia')">
